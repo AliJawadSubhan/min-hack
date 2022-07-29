@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fi/screens/customize.pro.dart';
 import 'package:fi/screens/pageview/page.dart';
 import 'package:fi/screens/product_detail.dart';
 import 'package:fi/screens/splashscreen.dart';
@@ -14,9 +15,9 @@ class ClothingApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProductDetail(),
+      home: Customize(),
     );
   }
 }

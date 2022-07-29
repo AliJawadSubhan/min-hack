@@ -1,4 +1,10 @@
+
+
+
 import 'package:fi/const.dart';
+import 'package:fi/screens/customize.pro.dart';
+import 'package:fi/screens/tab_bar/info.dart';
+import 'package:fi/screens/tab_bar/measurements.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,10 +18,13 @@ class ProductDetail extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: const Padding(
-          padding: EdgeInsets.only(left: 20.0),
-          child: Image(
-            image: AssetImage("images/Shape.png"),
+        leading: GestureDetector(
+          onTap: () {},
+          child: const Padding(
+            padding: const EdgeInsets.only(left: 20.0),
+            child: Image(
+              image: AssetImage("images/Shape.png"),
+            ),
           ),
         ),
         actions: [
@@ -58,10 +67,7 @@ class ProductDetail extends StatelessWidget {
                     style: TextStyle(fontSize: 17),
                   ),
                 ),
-                Text(
-                  "\$ 25.99",
-                  style: TextStyle(color: primaryColor),
-                ),
+                totalPrice,
               ],
             ),
           ),
@@ -101,18 +107,10 @@ class ProductDetail extends StatelessWidget {
                   decoration: const BoxDecoration(
                       border: Border(
                           top: BorderSide(color: Colors.grey, width: 0.5))),
-                  child: const TabBarView(
+                  child: TabBarView(
                     children: <Widget>[
-                      Center(
-                        child: Text('Display Tab 1',
-                            style: TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.bold)),
-                      ),
-                      Center(
-                        child: Text('Display Tab 2',
-                            style: TextStyle(
-                                fontSize: 22, fontWeight: FontWeight.bold)),
-                      ),
+                      const Info(),
+                      Measurments(),
                     ],
                   ),
                 ),
