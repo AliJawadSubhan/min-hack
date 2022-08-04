@@ -2,7 +2,6 @@
 
 
 import 'package:fi/const.dart';
-import 'package:fi/screens/customize.pro.dart';
 import 'package:fi/screens/tab_bar/info.dart';
 import 'package:fi/screens/tab_bar/measurements.dart';
 import 'package:flutter/material.dart';

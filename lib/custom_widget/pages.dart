@@ -1,6 +1,5 @@
 import 'package:fi/const.dart';
 import 'package:fi/screens/login.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -49,7 +48,7 @@ class Body extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
               SizedBox(

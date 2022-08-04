@@ -14,3 +14,6 @@ const totalPrice = Text(
   "\$ 25.99",
   style: TextStyle(color: primaryColor),
 );
+
+const commmentText =
+    "If you are looking for the latest and the most stylish Pakistan lawn collection 2018 with chiffon dupatta, you have come at the right place as Alkaram has brought fully embroidered lawn suits with chiffon and sleeves in its wide range of stitched and unstitched lawn suits.";

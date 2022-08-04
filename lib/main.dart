@@ -1,8 +1,7 @@
 import 'dart:async';
-
-import 'package:fi/screens/customize.pro.dart';
+import 'package:fi/screens/customize.dart';
+import 'package:fi/screens/dashboard.dart';
 import 'package:fi/screens/pageview/page.dart';
-import 'package:fi/screens/product_detail.dart';
 import 'package:fi/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +16,7 @@ class ClothingApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Customize(),
+      home: DashBoard(),
     );
   }
 }

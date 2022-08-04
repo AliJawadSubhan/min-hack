@@ -1,14 +1,19 @@
 import 'package:fi/const.dart';
-import 'package:fi/screens/customize.pro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../custom_widget/body_meas.dart';
+import '../customize.dart';
 
-class Measurments extends StatelessWidget {
-  Measurments({Key? key}) : super(key: key);
+class Measurments extends StatefulWidget {
+  const Measurments({Key? key}) : super(key: key);
 
+  @override
+  State<Measurments> createState() => _MeasurmentsState();
+}
+
+class _MeasurmentsState extends State<Measurments> {
   var color = [
     const Color(0xFF363641),
     const Color(0xFFEFE8D8),
